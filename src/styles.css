@@ -5,12 +5,13 @@ body{
     background: #04a0a0;  /* fallback for old browsers */
     /*background: -webkit-linear-gradient(to right, #4587a1, #51b88d);  /* Chrome 10-25, Safari 5.1-6 */
     /*background: linear-gradient(to right, #5a9bb4, #46c2b2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-image: url(cristo1.png);
+    background-image: url(cristo1.png), url(selva.png);
     background-repeat: no-repeat;
-    background-position: 1500px 400px;
+    background-position: 1500px 400px,0px 150px;
 
-   
-    
+    /* background-image: url(selva.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px; */
     /*background: #30E8BF;  /* fallback for old browsers */
     /*background: -webkit-linear-gradient(to right, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
     /*background: linear-gradient(to right, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
