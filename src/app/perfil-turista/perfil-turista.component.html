@@ -1,0 +1,67 @@
+<div class="container my-3">
+  <div class="row no-gutters">
+    <div class="col-6 col-md-3 text-center">
+      <img width="200" alt="Angular Logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRFM3zuKiCeSNIQEfROsG1LykF44f4WXAbwU31MUnawYSixemxgw">
+    </div>
+    <div class="col-12 col-sm-6 col-md-7">
+      <h1>Perfil Turista</h1>
+      <form>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label"><strong>Nombre</strong></label>
+          <div class="col-sm-8">
+            <label class="col-sm-10 col-form-label">Juanito</label>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label"><strong>Apellido</strong></label>
+          <div class="col-sm-8">
+            <label class="col-sm-10 col-form-label">Gusman</label>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label"><strong>Correo</strong></label>
+          <div class="col-sm-8">
+            <label class="col-sm-10 col-form-label">juanito-gusmans@gmail.com</label>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label"><strong>Telefono</strong></label>
+          <div class="col-sm-8">
+            <label class="col-sm-10 col-form-label">+591 4479511</label>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label"><strong>WhatsApp</strong></label>
+          <div class="col-sm-8">
+            <label class="col-sm-10 col-form-label">+591 79879511</label>
+          </div>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal" [routerLink]="['/EditarTurista']">Editar Informacion</button>
+        <button type="button" class="btn btn-info"  data-toggle="modal" data-target="#perfilTurista">Eliminar Informacion</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="modal fade" id="perfilTurista" tabindex="-1" role="dialog" aria-labelledby="perfilTuristaLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #00796B;">
+        <h5 class="modal-title text-danger" id="perfilTuristaLabel">Eliminar Cuenta</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color: #B2DFDB;">
+        Tu informacion se Eliminara completamente<br>
+        ¿Esta seguro?
+      </div>
+      <div class="modal-footer" style="background-color: #FFFFFF;">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-info" data-dismiss="modal">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>

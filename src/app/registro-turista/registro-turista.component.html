@@ -1,0 +1,62 @@
+<div class="row justify-content-center my-3">
+  <div class="col-5 rounded border border-info" style="background-color: #d1f4fa;">
+    <div class="text-center">
+      <h1>Registro de Usuario</h1>
+    </div>
+    <form method="POST" class="form " class="form-horizontal span4 " (ngSubmit)="submit()">
+      <div class="form-group">
+        <label for="txtAgencia"><strong>Nombre</strong></label>
+        <input type="text" class="form-control" id="txtAgencia" name="txtAgencia" placeholder="Nombre(s)">
+      </div>
+      
+      <div class="form-group">
+        <label for="txtPais"><strong>Apellido</strong></label>
+        <input type="text" class="form-control" id="txtPais" name="txtPais" placeholder="Apellido(s)">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="txtTelefono"><strong>Telefono</strong></label>
+          <input type="tel" class="form-control" id="txtTelefono" name="txtTelefono">
+        </div>
+        <div class="form-group col-md-6 ">
+          <label for="txtWhatsapp"><strong>Whatsapp</strong></label>
+          <input type="tel" class="form-control" id="txtWhatsapp" name="txtWhatsapp">
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="txtCorreoAg"> <strong>Correo Electronico</strong> </label>
+            <input type="email" class="form-control" id="txtCorreoAg" name="txtCorreoAg" placeholder="nombre@gmail.com" />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="txtConfcontra"><strong>Contraseña</strong></label>
+          <input type="password"  class="form-control" id="txtConfcontra" name="txtConfcontra">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#registroUsuario">Registrar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modal fade" id="registroUsuario" tabindex="-1" role="dialog" aria-labelledby="registroUsuarioLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #00796B;">
+        <h5 class="modal-title" id="registroUsuarioLabel">Registro Exitoso</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color: #B2DFDB;">
+        Tu informacion se guardo correctamente<br>
+        Bienvenido
+      </div>
+      <div class="modal-footer" style="background-color: #FFFFFF;">
+        <button type="submit" class="btn" data-dismiss="modal">Confirmar</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,75 @@
+<div class="row justify-content-center my-3">
+  <div [hidden]="submitted" class="col-5 rounded border border-info" style="background-color: #d1f4fa;">
+    <div  class="text-center">
+      <h3>Registro de Agencia de Turismo</h3>
+    </div>
+    <form (ngSubmit)="onSubmit()" method="POST" class="form" class="form-horizontal span4">
+      <div class="form-group">
+        <label class="control-label" for="txtAgencia"><strong>Agencia</strong></label>
+        <input type="text" class="form-control" id="name" required [(ngModel)]="customer.name" name="name">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="txtPais"><strong>Pais</strong></label>
+          <input type="text" class="form-control" id="country" required [(ngModel)]="customer.country" name="country">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="txtCiudad"><strong>Ciudad</strong></label>
+          <input type="text" class="form-control" id="city" required [(ngModel)]="customer.city" name="city">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="txtDireccion"><strong>Direccion</strong></label>
+        <input type="text" class="form-control" id="addres" required [(ngModel)]="customer.addres" name="addres" placeholder="Nombre de Calle - Nº">
+      </div>
+
+      <div class="form-row">
+          <div class="form-group col-md-6">
+          <label for="txtTelefono"><strong>Telefono</strong></label>
+          <input type="tel" class="form-control" id="phone" required [(ngModel)]="customer.phone" name="phone" placeholder="Ej: +951 7655846">
+        </div>
+      
+        <div class="form-group col-md-6">
+          <label for="txtWhatsapp"><strong>WhatsApp</strong></label>
+          <input type="tel" class="form-control" id="whatsapp" required [(ngModel)]="customer.whatsapp" name="agwhatsappe" placeholder="Ej: +951 7655846">
+        </div>
+      </div>
+      
+      <div class="form-row align-items-center">
+        <div class="form-group col-md-6 ">
+          <label for="txtCorreoAg"><strong>Correo</strong></label>
+          <input type="email" class="form-control" id="email" required [(ngModel)]="customer.email" name="email" placeholder="Agencia@gmail.com">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="txtConfcontra"><strong>Contraseña</strong></label>
+          <input type="password"  class="form-control" id="pass" required [(ngModel)]="customer.pass" name="pass">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-info" data-toggle="modal" data-target="#registroAgencia">Registrar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modal fade" id="registroAgencia" tabindex="-1" role="dialog" aria-labelledby="registroAgenciaLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div  [hidden]="!submitted" class="modal-content">
+      <div class="modal-header" style="background-color: #00796B;">
+        <h5 class="modal-title" id="registroAgenciaLabel">Registro Exitoso</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color: #B2DFDB;">
+        Tu informacion se guardo correctamente<br>
+        Bienvenido
+      </div>
+      <div class="modal-footer" style="background-color: #FFFFFF;">
+        <button type="submit" class="btn" data-dismiss="modal">Confirmar</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+ <!--class="fixed-top"-->
+<div>
+  <div class="modal-header text-white py-4" style="background-color: #005892af;">
+    <h2>Turismo on-line</h2>
+  </div>
+
+  <nav class="navbar navbar-expand navbar-light" style="background-color: #53cce28c;">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active" routerLinkActive="active">
+          <a class="nav-link rounded border border-info" style="background-color: #FFFFFF;" [routerLink]="['/']">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown" routerLinkActive="active">
+          <a class="nav-link dropdown-toggle rounded border border-info" style="background-color: #FFFFFF;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Opciones de USR
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="nav-link" [routerLink]="['/PerfilAgencia']">Perfil Agencia <span class="sr-only">(current)</span></a>
+            <a class="nav-link" [routerLink]="['/PerfilTurista']">Perfil Turista <span class="sr-only">(current)</span></a>
+            <a class="nav-link" [routerLink]="['/EditarAgencia']">Editar INF Agencia <span class="sr-only">(current)</span></a>
+            <a class="nav-link" [routerLink]="['/EditarTurista']">Editar INF Turista <span class="sr-only">(current)</span></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="text-rigth text-dark">
+      <div class="rounded border border-info" style="background-color: #FFFFFF;" [routerLink]="['/Login']">
+        <a>Login </a><i class="far fa-user-circle fa-w-16 fa-2x"></i>
+      </div>
+    </div>
+  </nav>
+
+</div>
